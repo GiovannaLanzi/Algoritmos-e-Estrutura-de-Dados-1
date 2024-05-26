@@ -1,0 +1,5 @@
+Exercício 1
+int
+float
+double
+char
