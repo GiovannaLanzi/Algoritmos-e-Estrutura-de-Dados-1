@@ -1,3 +1,4 @@
+//Autores: Giovanna Lanzi Lopes Torres e Pedro Nicolas Costa
 #include <stdio.h>
 #include <locale.h>
 
@@ -27,9 +28,9 @@ int main() {
     printf("Digite o nome do Jogador #2: ");
     gets(jogador2);
 
-    printf("\nO Jogador %s será O e o Jogador %s será X.\n\n", jogador1, jogador2);
+    printf("\nO Jogador %s serÃ¡ O e o Jogador %s serÃ¡ X.\n\n", jogador1, jogador2);
     printf("----MANUAL DO JOGO----\n");
-    printf("-> Você controlará suas jogadas a partir do TECLADO NÚMERICO de seu computador. Observe que ele é composto por 9 botões, que irão representar as posições do jogo da velha.\n");
+    printf("-> VocÃª controlarÃ¡ suas jogadas a partir do TECLADO NÃšMERICO de seu computador. Observe que ele Ã© composto por 9 botÃµes, que irÃ£o representar as posiÃ§Ãµes do jogo da velha.\n");
     printf("\n\n\t 7 | 8 | 9\n\t-----------\n\t 4 | 5 | 6\n\t-----------\n\t 1 | 2 | 3\n\n");
 
 	
@@ -58,9 +59,9 @@ int main() {
         
         do {
             if (jogador == 1) {
-                printf("%s, digite a posição (1-9) onde você deseja jogar: ", jogador1);
+                printf("%s, digite a posiÃ§Ã£o (1-9) onde vocÃª deseja jogar: ", jogador1);
             } else {
-                printf("%s, digite a posição (1-9) onde você deseja jogar: ", jogador2);
+                printf("%s, digite a posiÃ§Ã£o (1-9) onde vocÃª deseja jogar: ", jogador2);
             }
             scanf("%d", &escolha);
         }
@@ -88,7 +89,7 @@ int main() {
                 jogador = 1; 
             }
         } else {
-            printf("Posição já ocupada! Tente novamente.\n"); 
+            printf("PosiÃ§Ã£o jÃ¡ ocupada! Tente novamente.\n"); 
         }
 
         
@@ -110,9 +111,11 @@ int main() {
         
         if (ganhou == 1) { 
             if (jogador == 1) {
-                printf("\nParabéns! Vitória do jogador %s!\n", jogador2); 
+                printf("\nParabÃ©ns! VitÃ³ria do jogador %s!\n", jogador2); 
+		printf("Autores: Giovanna Lanzi Lopes Torres e Pedro Nicolas Costa");
             } else {
-                printf("\nParabéns! Vitória do jogador %s!\n", jogador1); 
+                printf("\nParabÃ©ns! VitÃ³ria do jogador %s!\n", jogador1); 
+		printf("Autores: Giovanna Lanzi Lopes Torres e Pedro Nicolas Costa");
             }
         }
         
